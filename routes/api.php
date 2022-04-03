@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TeamInfoController;
+use App\Http\Controllers\GameResultController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,4 @@ use App\Http\Controllers\TeamInfoController;
 
 Route::get('/teams', TeamController::class . '@index');
 Route::apiResource('/teams/{team}/info', TeamInfoController::class)->only(['store', 'update']);
+Route::post('/game-result', GameResultController::class . '@store');

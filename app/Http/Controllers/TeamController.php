@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Team;
-use Illuminate\Support\Facades\DB;
 
 class TeamController extends Controller
 {

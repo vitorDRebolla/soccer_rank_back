@@ -3,8 +3,6 @@
 namespace App\Http\Repositories;
 
 use App\Models\TeamInfo;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class GameResultRepository
 {
@@ -63,7 +61,7 @@ class GameResultRepository
         return $teamInfo;
     }
 
-    public function updateOrCreate($teamInfo)
+    private function updateOrCreate($teamInfo)
     {
         TeamInfo::updateOrCreate(
             [

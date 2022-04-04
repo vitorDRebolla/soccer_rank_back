@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Repositories\GameResultRepository;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class GameResultController extends Controller
 {
